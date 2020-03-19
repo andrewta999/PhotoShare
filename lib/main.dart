@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:photoshare/pages/home.dart';
 
 void main() {
   runApp(MyApp());
@@ -8,9 +9,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'FlutterShare',
+      title: 'PhotoShare',
       debugShowCheckedModeBanner: false,
-      home: Text("Hello World"),
+      //set theme for the app
+      theme: ThemeData(
+        primarySwatch: Colors.deepPurple,
+        accentColor: Colors.teal,
+      ),
+      home: Home(),
     );
   }
 }
